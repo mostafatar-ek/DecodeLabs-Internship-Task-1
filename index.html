@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DecodeLabs — Build the Future. A responsive frontend interface showcasing modern web development skills." />
+    <title>DecodeLabs | Build the Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ===== HEADER & NAV ===== -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Primary navigation">
+        <a href="#" class="nav-logo" aria-label="DecodeLabs home">
+          <span class="logo-icon" aria-hidden="true">&#9671;</span>
+          DecodeLabs
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu" role="list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#articles" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#articles" class="btn btn-primary nav-cta">Get Started</a>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+      <!-- Hero Section -->
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p class="hero-eyebrow">DecodeLabs Internship Program</p>
+          <h1 id="hero-heading">Build the <span class="highlight">Future</span></h1>
+          <p class="hero-subtitle">
+            A strategic execution framework for full-stack interns. Master the art of building flexible, accessible, and beautifully crafted frontends — one responsive breakpoint at a time.
+          </p>
+          <div class="hero-actions">
+            <a href="#articles" class="btn btn-primary">Explore Projects</a>
+            <a href="#features" class="btn btn-ghost">Learn More</a>
+          </div>
+          <div class="hero-stats" role="list" aria-label="Program highlights">
+            <div class="stat" role="listitem">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Milestones</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Core Skills</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Hands-on</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-mockup">
+            <div class="device-screen">
+              <div class="mock-nav"></div>
+              <div class="mock-hero-block"></div>
+              <div class="mock-grid">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+            </div>
+          </div>
+          <div class="blob blob-1" aria-hidden="true"></div>
+          <div class="blob blob-2" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features" id="features" aria-labelledby="features-heading">
+        <div class="section-container">
+          <header class="section-header">
+            <p class="section-eyebrow">The Toolkit</p>
+            <h2 id="features-heading">Your Raw Materials</h2>
+            <p class="section-desc">No frameworks. Master the fundamentals first.</p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card" aria-labelledby="feat-html">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h3 id="feat-html">HTML5 — The Infrastructure</h3>
+              <p>Semantic landmarks and structural meaning. Not just divs, but the right element for the right job.</p>
+              <ul class="feature-tags" aria-label="HTML5 concepts">
+                <li>Semantic Elements</li>
+                <li>Accessibility</li>
+                <li>SEO</li>
+              </ul>
+            </article>
+
+            <article class="feature-card feature-card--accent" aria-labelledby="feat-css">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+                </svg>
+              </div>
+              <h3 id="feat-css">CSS3 — The Skin</h3>
+              <p>Responsive styling using Grid, Flexbox, and Container Queries. From mobile-first to fluid typography.</p>
+              <ul class="feature-tags" aria-label="CSS3 concepts">
+                <li>CSS Grid</li>
+                <li>Flexbox</li>
+                <li>clamp()</li>
+              </ul>
+            </article>
+
+            <article class="feature-card" aria-labelledby="feat-js">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                </svg>
+              </div>
+              <h3 id="feat-js">JavaScript — The Logic</h3>
+              <p>Basic state management and interactive functionality. DOM manipulation, events, and dynamic UI.</p>
+              <ul class="feature-tags" aria-label="JavaScript concepts">
+                <li>DOM Events</li>
+                <li>State</li>
+                <li>Interactivity</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap Section -->
+      <section class="roadmap" id="roadmap" aria-labelledby="roadmap-heading">
+        <div class="section-container">
+          <header class="section-header">
+            <p class="section-eyebrow">The Process</p>
+            <h2 id="roadmap-heading">Execution Roadmap</h2>
+            <p class="section-desc">Six phases from idea to production-ready interface.</p>
+          </header>
+
+          <ol class="roadmap-list" aria-label="Project execution phases">
+            <li class="roadmap-step" data-step="1">
+              <div class="step-number" aria-hidden="true">01</div>
+              <div class="step-content">
+                <h3>Discovery</h3>
+                <p>Define "How Might We" — use Empathy Maps to uncover user pain points.</p>
+              </div>
+            </li>
+            <li class="roadmap-step" data-step="2">
+              <div class="step-number" aria-hidden="true">02</div>
+              <div class="step-content">
+                <h3>Wireframe</h3>
+                <p>Grayscale, mobile-first blueprints. If it doesn't work in grayscale, color won't fix it.</p>
+              </div>
+            </li>
+            <li class="roadmap-step" data-step="3">
+              <div class="step-number" aria-hidden="true">03</div>
+              <div class="step-content">
+                <h3>Semantics</h3>
+                <p>HTML landmarks. Proper structure provides a Table of Contents for screen readers and AI.</p>
+              </div>
+            </li>
+            <li class="roadmap-step" data-step="4">
+              <div class="step-number" aria-hidden="true">04</div>
+              <div class="step-content">
+                <h3>Style</h3>
+                <p>CSS Grid, Flexbox, and the 2025 warm palette. Shift from sterile tech to warmth and grounding.</p>
+              </div>
+            </li>
+            <li class="roadmap-step" data-step="5">
+              <div class="step-number" aria-hidden="true">05</div>
+              <div class="step-content">
+                <h3>Logic</h3>
+                <p>State management and interactivity — bringing the interface to life with JavaScript.</p>
+              </div>
+            </li>
+            <li class="roadmap-step" data-step="6">
+              <div class="step-number" aria-hidden="true">06</div>
+              <div class="step-content">
+                <h3>Audit</h3>
+                <p>LCP/CLS performance checks and strict WCAG accessibility compliance.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Content Grid / Articles Section -->
+      <section class="articles-section" id="articles" aria-labelledby="articles-heading">
+        <div class="section-container">
+          <header class="section-header">
+            <p class="section-eyebrow">Content Grid</p>
+            <h2 id="articles-heading">Project Milestones</h2>
+            <p class="section-desc">Complete each milestone to unlock the next phase of your internship.</p>
+          </header>
+
+          <!-- Filter Bar -->
+          <div class="filter-bar" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+            <button class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+            <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Full Stack</button>
+          </div>
+
+          <div class="articles-grid" id="articlesGrid">
+            <article class="project-card" data-category="frontend" aria-labelledby="proj-1-title">
+              <div class="card-badge">Current</div>
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-1"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Frontend</span>
+                <h3 id="proj-1-title">Project 1: Responsive Interface</h3>
+                <p>Build a responsive frontend using HTML, CSS, and JavaScript. Master mobile-first design and CSS Grid layouts.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--active">In Progress</span>
+                  <a href="#" class="card-link" aria-label="View Project 1 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="backend" aria-labelledby="proj-2-title">
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-2"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Backend</span>
+                <h3 id="proj-2-title">Project 2: REST API</h3>
+                <p>Design and build a RESTful API with proper authentication, data validation, and error handling.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--locked">Locked</span>
+                  <a href="#" class="card-link" aria-label="View Project 2 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="fullstack" aria-labelledby="proj-3-title">
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-3"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Full Stack</span>
+                <h3 id="proj-3-title">Project 3: Database Integration</h3>
+                <p>Connect frontend to backend with a real database. Learn CRUD operations and data persistence.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--locked">Locked</span>
+                  <a href="#" class="card-link" aria-label="View Project 3 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="frontend" aria-labelledby="proj-4-title">
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-4"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Frontend</span>
+                <h3 id="proj-4-title">Project 4: State Management</h3>
+                <p>Advanced JavaScript state patterns, local storage, and complex UI interactions without a framework.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--locked">Locked</span>
+                  <a href="#" class="card-link" aria-label="View Project 4 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="backend" aria-labelledby="proj-5-title">
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-5"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Backend</span>
+                <h3 id="proj-5-title">Project 5: Authentication</h3>
+                <p>Implement secure user authentication with JWT tokens, password hashing, and session management.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--locked">Locked</span>
+                  <a href="#" class="card-link" aria-label="View Project 5 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="fullstack" aria-labelledby="proj-6-title">
+              <div class="card-image" aria-hidden="true">
+                <div class="card-img-placeholder card-img-6"></div>
+              </div>
+              <div class="card-body">
+                <span class="card-category">Full Stack</span>
+                <h3 id="proj-6-title">Project 6: Capstone App</h3>
+                <p>Build a complete, production-ready full-stack application that showcases your entire skill set.</p>
+                <footer class="card-footer">
+                  <span class="card-status card-status--locked">Locked</span>
+                  <a href="#" class="card-link" aria-label="View Project 6 details">View Project →</a>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two-Column Section: Vision + Standards -->
+      <section class="vision-section" id="vision" aria-labelledby="vision-heading">
+        <div class="section-container">
+          <div class="vision-layout">
+            <div class="vision-content">
+              <p class="section-eyebrow">The Vision</p>
+              <h2 id="vision-heading">Architecting for the Mobile Web</h2>
+              <p>Construct a digital experience that honors the mobile-first paradigm. The web is a dynamic, inclusive information system — and your code determines who has access to information and how the world experiences it.</p>
+              <a href="#articles" class="btn btn-primary">Start Building</a>
+            </div>
+            <aside class="standards-panel" aria-label="Project standards">
+              <h3>The Standards</h3>
+              <ul class="standards-list" role="list">
+                <li class="standard-item">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </div>
+                  <div>
+                    <strong>Semantic Integrity</strong>
+                    <p>Code for AI and Accessibility</p>
+                  </div>
+                </li>
+                <li class="standard-item">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                  </div>
+                  <div>
+                    <strong>2025 UI/UX Compliance</strong>
+                    <p>Warm, grounded aesthetics</p>
+                  </div>
+                </li>
+                <li class="standard-item">
+                  <div class="standard-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
+                  <div>
+                    <strong>Universal Access</strong>
+                    <p>Strict WCAG adherence</p>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="contact" aria-label="Site footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="DecodeLabs home">
+            <span class="logo-icon" aria-hidden="true">&#9671;</span>
+            DecodeLabs
+          </a>
+          <p>Full Stack Development Internship Program — Batch 2026. Empowering the next generation of digital architects.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Program</h4>
+          <ul role="list">
+            <li><a href="#hero">Overview</a></li>
+            <li><a href="#features">Toolkit</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#articles">Projects</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Standards navigation">
+          <h4>Standards</h4>
+          <ul role="list">
+            <li><a href="#vision">Mobile-First</a></li>
+            <li><a href="#vision">WCAG 2.1</a></li>
+            <li><a href="#vision">Semantic HTML</a></li>
+            <li><a href="#vision">Performance</a></li>
+          </ul>
+        </nav>
+
+        <address class="footer-contact" aria-label="Contact information">
+          <h4>Contact</h4>
+          <ul role="list">
+            <li>
+              <a href="mailto:decodelabs.tech@gmail.com" aria-label="Email DecodeLabs">
+                decodelabs.tech@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+918933006408" aria-label="Call DecodeLabs">
+                +91 89330 06408
+              </a>
+            </li>
+            <li>Greater Lucknow, India</li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DecodeLabs. Built with HTML, CSS &amp; JavaScript — no frameworks.</p>
+        <p>
+          <a href="#main-content" class="skip-to-top">Back to top ↑</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Skip to main content (accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
